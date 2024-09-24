@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none; /* Initially hide answers */
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar1 bg-base-300">
+        <div class="container">
+          <div class="navbar flex flex-row mx-8 my-8 ">
+            <div class="navbar-start w-1/3">
+
+                <a class="btn btn-success  
+              font-bold text-center 
+              space-y-0   bg-[#84cc16]" href="index.html">Blog</a>
+              
+            </div>
+            <div class="navbar-center w-1/3">
+              <button class="btn btn-success font-bold text-center rounded-2xl space-y-0 bg-base-300 border-base-300 shadow-none hover:bg-base-300 hidden lg:flex">
+                <img class="mx-8" src="logo.png">Donate Bangladesh
+              </button>
+            </div>
+            <div class="navbar-end w-1/3"> 
+              <button class="btn btn-success  
+              font-bold text-center 
+              space-y-0  bg-base-300 border-base-300 shadow-none"  id="fixedBtn"><img src="coin.png"> <span id="button3Value">52000000</span> BDT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+        <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer1')">What is DOM?</div>
+            <div class="faq-answer" id="answer1">Document Object Model</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer2')"> Do you know abot programing hero name</div>
+            <div class="faq-answer" id="answer2">yes.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer3')">What payment methods do you accept?</div>
+            <div class="faq-answer" id="answer3">We accept all major credit cards, PayPal, and bank transfers.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer4')">  Can i know about recent flood</div>
+            <div class="faq-answer" id="answer4">Yes,</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer('answer5')">How can I contact customer service?</div>
+            <div class="faq-answer" id="answer5"> abgsgshjhs@gmail.com</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block"; // Show the answer
+            } else {
+                answer.style.display = "none"; // Hide the answer
+            }
+        }
+    </script>
+
+</body>
+</html>
